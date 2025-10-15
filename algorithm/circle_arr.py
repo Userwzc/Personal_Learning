@@ -59,10 +59,12 @@ class CycleArray:
         if self.is_empty():
             raise IndexError("Remove from empty array")
         self.end = (self.end - 1 + self.size) % self.size
+        val = self.arr[self.end]
         self.arr[self.end] = None
         self.count -= 1
         if self.count > 0 and self.count == self.size // 4:
             self.resize(self.size // 2)
+        return val
     
     def get_first(self):
         if self.is_empty():
