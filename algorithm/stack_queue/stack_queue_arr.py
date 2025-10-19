@@ -15,7 +15,7 @@ class MyArrayStack:
     def size(self):
         return len(self.stack)
     
-from circle_arr import CycleArray
+from algorithm.arr.circle_arr import CycleArray
 
 class MyArrayQueue:
     def __init__(self):

@@ -1,0 +1,1 @@
+"""Singly linked list data structure subpackage."""

@@ -1,0 +1,1 @@
+"""Hashmap data structure subpackage."""
