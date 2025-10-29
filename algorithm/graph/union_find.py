@@ -23,6 +23,3 @@
 # 这样可以保证最终树高在O(logN)级别，所以union,connected,find方法的时间复杂度都是O(logN)
 
 # 路径压缩(Path Compression)优化，均摊复杂度为O(1),这样就可以保证union,connected,find方法的时间复杂度都是常数级别O(1).
-
-
-
