@@ -9,16 +9,17 @@ def max_heap_swim(arr, index):
         index = (index - 1) // 2
 
 def max_heap_sink(arr, index, heap_size):
-    while 2 * index + 1 < heap_size or 2 * index + 2 < heap_size:
-        max_index = index
-        if 2 * index + 1 < heap_size and arr[2 * index + 1] > arr[max_index]:
-            max_index = 2 * index + 1
-        if 2 * index + 2 < heap_size and arr[2 * index + 2] > arr[max_index]:
-            max_index = 2 * index + 2
-        if max_index == index:
+    while 2 * index + 1 < heap_size:
+        j = 2 * index + 1  # 左子节点
+        # 选出左右子节点中较大的那个
+        if j + 1 < heap_size and arr[j + 1] > arr[j]:
+            j += 1
+        # 如果父节点已经大于等于子节点，停止下沉
+        if arr[index] >= arr[j]:
             break
-        arr[index], arr[max_index] = arr[max_index], arr[index]
-        index = max_index
+        # 否则交换父节点和子节点
+        arr[index], arr[j] = arr[j], arr[index]
+        index = j
 
 def sort(arr):
     n = len(arr)
