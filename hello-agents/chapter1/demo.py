@@ -186,3 +186,8 @@ for i in range(5):  # 设置最大循环次数
     observation_str = f"Observation: {observation}"
     print(f"{observation_str}\n" + "="*40)
     prompt_history.append(observation_str)
+
+
+# 这个简单的旅行助手案例，
+# 集中演示了基于Thought-Action-Observation范式的智能体所具备的四项基本能力：任务分解、工具调用、上下文理解和结果合成。
+# 正是通过这个循环的不断迭代，智能体才得以将一个模糊的用户意图，转化为一系列具体、可执行的步骤，并最终达成目标。
