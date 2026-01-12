@@ -1,5 +1,5 @@
 from typing import Optional, Iterator
-from hello_agents import SimpleAgent, HelloAgentsLLM, Config, Message
+from hello_agents import SimpleAgent, HelloAgentsLLM, Config, Message,ToolRegistry
 import re
 
 
@@ -14,7 +14,7 @@ class MySimpleAgent(SimpleAgent):
         llm: HelloAgentsLLM,
         system_prompt: Optional[str] = None,
         config: Optional[Config] = None,
-        tool_registry: Optional['ToolRegistry'] = None,
+        tool_registry: Optional[ToolRegistry] = None,
         enable_tool_calling: bool = True 
     ):
         super().__init__(name, llm, system_prompt, config)
