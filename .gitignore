@@ -2,3 +2,6 @@
 __pycache__/
 .vscode/
 .env
+qdrant_storage/
+neo4j_data/
+memory_data/
