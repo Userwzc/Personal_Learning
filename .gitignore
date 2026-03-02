@@ -6,3 +6,4 @@ qdrant_storage/
 neo4j_data/
 memory_data/
 output/
+temp_gorilla/
