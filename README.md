@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README_zh.md)
+
 # 📚 Personal Learning Repository
 
 Welcome to my personal learning and practice repository! This workspace is dedicated to my continuous skill development in foundational computer science, data science, and advanced AI agent frameworks.
